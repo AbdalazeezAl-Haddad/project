@@ -3,7 +3,6 @@
     font-size: clamp(7px, 10%, 30px);
     width: 40%;
     padding: 10px;
-    background-color: #aacd7c;
     color: black;
     font-weight: bold;
     margin-bottom: -30px;
@@ -41,6 +40,23 @@
       .grid-container {
         grid-template-columns: repeat(2, 1fr);
       } 
+       @media (max-width: 400px) {
+         .name {
+          background-color: #a7cfbb; 
+        }
+      }
+
+      @media (min-width: 401px) and (max-width: 600px) {
+        .name {
+          background-color: #8abc5e; 
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 1024px) {
+          .name {
+            background-color: #0a711e; 
+        }
+      }
 
        /* Small screens (e.g., tablets, 640px and up): 2 columns */
       @media (min-width: 640px) {
